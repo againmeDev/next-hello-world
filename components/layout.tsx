@@ -46,11 +46,17 @@ backdrop-blur"
   );
 }
 
+function Footer() {
+  return <footer>footer</footer>
+} 
+
+
 export default function Layout({ children }: any) {
   return (
     <>
       <Navbar pageId={children.props.pageId} />
       <main>{children}</main>
+      <Footer /> 
     </>
   );
 }
